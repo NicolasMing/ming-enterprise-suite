@@ -133,14 +133,14 @@ const balanceFormulaRuleOptions = getIntDictOptions(DICT_TYPE.FMS_FORMULA_RULE).
     FMS_FORMULA_RULE.BALANCE,
     FMS_FORMULA_RULE.DEBIT_BALANCE,
     FMS_FORMULA_RULE.CREDIT_BALANCE
-  ].includes(item.value)
+  ].includes(item.value as 0 | 1 | 2)
 )
 const incomeFormulaRuleOptions = getIntDictOptions(DICT_TYPE.FMS_FORMULA_RULE).filter((item) =>
   [
     FMS_FORMULA_RULE.DEBIT_AMOUNT,
     FMS_FORMULA_RULE.CREDIT_AMOUNT,
     FMS_FORMULA_RULE.PROFIT_LOSS_AMOUNT
-  ].includes(item.value)
+  ].includes(item.value as 5 | 6 | 7)
 )
 
 /** 启用状态的科目 */

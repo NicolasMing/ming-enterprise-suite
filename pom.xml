@@ -36,8 +36,8 @@
     </modules>
 
     <name>${project.artifactId}</name>
-    <description>芋道项目基础脚手架</description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <description>明汇企业套件后端基础平台</description>
+    <url>https://github.com/NicolasMing/ming-enterprise-suite</url>
 
     <properties>
         <revision>2026.08-jdk25-SNAPSHOT</revision>

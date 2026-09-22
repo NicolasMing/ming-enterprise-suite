@@ -1,4 +1,4 @@
-name: yudao-ui-admin-vue3 CI
+name: Ming Enterprise Suite UI CI
 
 # 在master分支发生push事件时触发。
 on:
@@ -23,7 +23,7 @@ jobs:
       - name: Checkout frontend
         uses: actions/checkout@v4
         with:
-          repository: NicolasMing/yudao-ui-admin-vue3
+          repository: NicolasMing/ming-enterprise-suite-ui
           path: yudao-ui-admin
 
       - name: Install pnpm
