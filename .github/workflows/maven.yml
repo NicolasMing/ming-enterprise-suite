@@ -1,11 +1,11 @@
 # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Java CI with Maven
+name: Ming Enterprise Suite Backend CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master-jdk25 ]
   # pull_request:
   #   branches: [ master ]
 
@@ -14,16 +14,12 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        java: [ '8', '11', '17' ]
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK ${{ matrix.Java }}
-      uses: actions/setup-java@v2
+    - uses: actions/checkout@v4
+    - name: Set up JDK 25
+      uses: actions/setup-java@v4
       with:
-        java-version: ${{ matrix.java }}
+        java-version: '25'
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
