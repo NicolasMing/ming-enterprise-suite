@@ -300,7 +300,7 @@ yudao:
     version: ${yudao.info.version}
     url: ${yudao.web.admin-ui.url}
     license: MIT
-    license-url: https://github.com/NicolasMing/ming-enterprise-suite/blob/master/LICENSE
+    license-url: https://github.com/NicolasMing/ming-enterprise-suite/blob/master-jdk25/LICENSE
   codegen:
     base-package: ${yudao.info.base-package}
     db-schemas: ${spring.datasource.dynamic.datasource.master.name}
